@@ -32,7 +32,6 @@ select option{color:#0F172A}
 <a href="#services" style="color: #C3CBDA; text-decoration: none">Services</a>
 <a href="#industries" style="color: #C3CBDA; text-decoration: none">Industries</a>
 <a href="#products" style="color: #C3CBDA; text-decoration: none">Products</a>
-<a href="#insights" style="color: #C3CBDA; text-decoration: none">Insights</a>
 <a href="#about" style="color: #C3CBDA; text-decoration: none">About</a>
 <a href="#contact" style="background: #2DD4BF; color: #04201C; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 6px; font-size: 14px">Book a consultation</a>
 </nav>
@@ -40,13 +39,15 @@ select option{color:#0F172A}
 </header>
 
 <section id="top" style="position: relative; overflow: hidden; padding: 140px 24px 120px; min-height: 640px; box-sizing: border-box; display: flex; align-items: center">
-<svg aria-hidden="true" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%">
+<svg aria-hidden="true" viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid meet" style="position: absolute; inset: 0; width: 100%; height: 100%">
 <defs>
 <radialGradient id="core" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#2DD4BF" stop-opacity="0.22"></stop><stop offset="100%" stop-color="#2DD4BF" stop-opacity="0"></stop></radialGradient>
+<linearGradient id="edgefade" x1="0" x2="1440" y1="0" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"></stop><stop offset="0.24" stop-color="#fff"></stop><stop offset="0.36" stop-color="#000"></stop><stop offset="0.64" stop-color="#000"></stop><stop offset="0.76" stop-color="#fff"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient>
+<mask id="sidesonly" maskUnits="userSpaceOnUse" x="0" y="0" width="1440" height="760"><rect width="1440" height="760" fill="url(#edgefade)"></rect></mask>
 <radialGradient id="veil" cx="50%" cy="48%" r="42%"><stop offset="0%" stop-color="#0A0F1A" stop-opacity="0.92"></stop><stop offset="100%" stop-color="#0A0F1A" stop-opacity="0"></stop></radialGradient>
 </defs>
 <ellipse cx="720" cy="380" rx="640" ry="360" fill="url(#core)"></ellipse>
-<g stroke="#2DD4BF" stroke-opacity="0.28" stroke-width="1.2" fill="none">
+<g mask="url(#sidesonly)" stroke="#2DD4BF" stroke-opacity="0.35" stroke-width="1.2" fill="none">
 <path d="M150 150 C 420 160, 520 330, 720 380"></path>
 <path d="M150 300 C 420 300, 540 360, 720 380"></path>
 <path d="M150 460 C 420 460, 540 400, 720 380"></path>
@@ -55,7 +56,7 @@ select option{color:#0F172A}
 <path d="M720 380 C 940 380, 1040 380, 1290 380"></path>
 <path d="M720 380 C 920 430, 1020 580, 1290 570"></path>
 </g>
-<g stroke="#2DD4BF" stroke-opacity="0.9" stroke-width="1.6" fill="none" stroke-dasharray="6 220">
+<g mask="url(#sidesonly)" stroke="#2DD4BF" stroke-opacity="0.9" stroke-width="1.6" fill="none" stroke-dasharray="6 220">
 <path d="M150 300 C 420 300, 540 360, 720 380"><animate attributeName="stroke-dashoffset" values="226;0" dur="5s" repeatCount="indefinite"></animate></path>
 <path d="M150 610 C 420 600, 520 430, 720 380"><animate attributeName="stroke-dashoffset" values="226;0" dur="6.5s" repeatCount="indefinite"></animate></path>
 <path d="M720 380 C 940 380, 1040 380, 1290 380"><animate attributeName="stroke-dashoffset" values="226;0" dur="5.5s" repeatCount="indefinite"></animate></path>
@@ -72,7 +73,7 @@ select option{color:#0F172A}
 </svg>
 <div style="position: relative; max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center">
 <div style="font-size: 13px; letter-spacing: 0.18em; color: #2DD4BF; font-weight: 700">YOUR DATA · REAL AI VALUE</div>
-<h1 style="margin: 0; font-size: clamp(42px, 6.4vw, 84px); line-height: 1.04; font-weight: 700; color: #FFFFFF; letter-spacing: -0.025em">Get real value from AI —<br>starting with your data.</h1>
+<h1 style="margin: 0; font-size: clamp(42px, 6.4vw, 84px); line-height: 1.04; font-weight: 700; color: #FFFFFF; letter-spacing: -0.025em">Real value from AI.<br>Starting with your data.</h1>
 <p style="margin: 0; font-size: 20px; line-height: 1.6; color: #C3CBDA; max-width: 760px">Most AI initiatives stall before they pay off — not because of the models, but because the data underneath isn't ready. Tekmera builds the governed foundation and the AI use cases on top of it, in your environment, so value shows up in production, not just in pilots.</p>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; padding-top: 4px">
 <a href="#contact" style="background: #2DD4BF; color: #04201C; text-decoration: none; font-weight: 700; padding: 16px 26px; border-radius: 6px; font-size: 15px">Book a platform assessment</a>
@@ -211,16 +212,16 @@ select option{color:#0F172A}
 <section id="products" style="position: relative; overflow: hidden; background: #0A0F1A; padding: 110px 24px; border-top: 1px solid #1C2536">
 <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
 <div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
-<div style="font-size: 13px; letter-spacing: 0.18em; color: #2DD4BF; font-weight: 700">PRODUCT · IN DEVELOPMENT</div>
-<h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; color: #FFFFFF; letter-spacing: -0.01em">[Product name]: making care more affordable, with evidence.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #A9B3C6">Healthcare data holds the answers to why patients pay more than they should. [Product name] surfaces affordability gaps and turns them into evidence-backed cases your teams can act on.</p>
+<div style="font-size: 13px; letter-spacing: 0.18em; color: #2DD4BF; font-weight: 700">AFFORDIA™ BY TEKMERA · IN DEVELOPMENT</div>
+<h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; color: #FFFFFF; letter-spacing: -0.01em">Affordability that reaches the patient.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #A9B3C6">Affordia turns copay claims anomalies into recovered dollars — and recovered dollars into affordability that reaches the patient. It detects leakage in copay assistance programs and builds the evidence case your teams need to act.</p>
 <div style="padding-top: 8px"><a href="#contact" style="border: 1px solid #334155; color: #E6EAF2; text-decoration: none; font-weight: 700; padding: 14px 22px; border-radius: 6px; font-size: 15px; display: inline-block">Join the early-access list</a></div>
 </div>
 <div style="flex: 1 1 460px; min-width: 0; position: relative; padding: 28px; border-radius: 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); display: flex; flex-direction: column; gap: 14px">
 <svg aria-hidden="true" viewBox="0 0 500 500" preserveAspectRatio="none" style="position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 18px"><defs><filter id="pglow"><feGaussianBlur stdDeviation="60"></feGaussianBlur></filter></defs><g filter="url(#pglow)"><ellipse cx="380" cy="120" rx="180" ry="120" fill="#1D4ED8" fill-opacity="0.5"></ellipse><ellipse cx="120" cy="400" rx="180" ry="120" fill="#2DD4BF" fill-opacity="0.3"></ellipse></g></svg>
 <div style="position: relative; display: flex; flex-direction: column; gap: 14px">
 <div style="background: #FFFFFF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 16px 32px rgba(0,0,0,0.3)">
-<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 50%; background: #0F172A; color: #FFFFFF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex: none">1</span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700; color: #0F172A">Detect</span><span style="font-size: 12px; color: #64748B">Find affordability gaps in your data</span></span></div>
+<div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 50%; background: #0F172A; color: #FFFFFF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex: none">1</span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700; color: #0F172A">Detect</span><span style="font-size: 12px; color: #64748B">Spot anomalies in copay claims</span></span></div>
 <svg viewBox="0 0 260 90" style="width: 100%; height: 90px; display: block" aria-hidden="true"><path d="M10 80 H250 M10 10 V80" stroke="#E2E8F0"></path><path d="M14 72 L246 26" stroke="#99D5CC" stroke-width="18" stroke-linecap="round" stroke-opacity="0.45"></path><g fill="#0F766E" fill-opacity="0.75"><circle cx="30" cy="68" r="3.5"></circle><circle cx="52" cy="66" r="3.5"></circle><circle cx="70" cy="60" r="3.5"></circle><circle cx="96" cy="56" r="3.5"></circle><circle cx="118" cy="52" r="3.5"></circle><circle cx="140" cy="50" r="3.5"></circle><circle cx="166" cy="44" r="3.5"></circle><circle cx="190" cy="38" r="3.5"></circle><circle cx="214" cy="34" r="3.5"></circle><circle cx="236" cy="30" r="3.5"></circle><circle cx="84" cy="62" r="3.5"></circle><circle cx="152" cy="46" r="3.5"></circle></g><circle cx="128" cy="14" r="6" fill="#C2410C"></circle><circle cx="128" cy="14" r="11" fill="none" stroke="#C2410C" stroke-width="1.5"><animate attributeName="r" values="8;14;8" dur="2.4s" repeatCount="indefinite"></animate></circle><text x="144" y="18" font-family="Arial" font-size="10" font-weight="700" fill="#C2410C">Outlier charge</text></svg>
 </div>
 <div style="background: #FFFFFF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 16px 32px rgba(0,0,0,0.3)">
@@ -229,27 +230,10 @@ select option{color:#0F172A}
 </div>
 <div style="background: #FFFFFF; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 16px 32px rgba(0,0,0,0.3)">
 <div style="display: flex; align-items: center; gap: 10px"><span style="width: 26px; height: 26px; border-radius: 50%; background: #0F172A; color: #FFFFFF; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex: none">3</span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700; color: #0F172A">Act</span><span style="font-size: 12px; color: #64748B">Route the case and close the gap</span></span></div>
-<div style="display: flex; gap: 8px; align-items: center"><div style="flex: 1; border-radius: 8px; background: #0F172A; color: #FFFFFF; padding: 10px; font-size: 12px; display: flex; flex-direction: column; gap: 3px"><b>Case ready</b><span style="color: #94A3B8">Routed for review</span></div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><div style="flex: 1; border-radius: 8px; background: #E6F6F3; color: #0F766E; padding: 10px; font-size: 12px; font-weight: 700">Patient cost reduced</div></div>
+<div style="display: flex; gap: 8px; align-items: center"><div style="flex: 1; border-radius: 8px; background: #0F172A; color: #FFFFFF; padding: 10px; font-size: 12px; display: flex; flex-direction: column; gap: 3px"><b>Case ready</b><span style="color: #94A3B8">Routed for review</span></div><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F766E" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg><div style="flex: 1; border-radius: 8px; background: #E6F6F3; color: #0F766E; padding: 10px; font-size: 12px; font-weight: 700">Dollars recovered for patients</div></div>
 </div>
 <div style="font-size: 12px; color: #94A3B8">Concept illustration.</div>
 </div>
-</div>
-</div>
-</section>
-
-<section id="insights" style="background: #F5F7FA; color: #0F172A; padding: 110px 24px">
-<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 16px">
-<div style="font-size: 13px; letter-spacing: 0.18em; color: #0F766E; font-weight: 700">INSIGHTS</div>
-<h2 style="margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.1; letter-spacing: -0.01em">Perspectives from the field.</h2>
-</div>
-<a href="#insights" style="color: #0F766E; font-weight: 700; font-size: 15px">View all insights →</a>
-</div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px">
-<a href="#insights" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 32px; text-decoration: none; color: #0F172A; display: flex; flex-direction: column; gap: 14px"><span style="font-size: 12px; font-weight: 700; color: #0F766E; letter-spacing: 0.12em">GOVERNANCE · [DATE]</span><span style="font-size: 20px; font-weight: 700; line-height: 1.35">Governance first: why regulated data platforms stall after the pilot</span><span style="font-size: 14px; color: #64748B">[Author]</span></a>
-<a href="#insights" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 32px; text-decoration: none; color: #0F172A; display: flex; flex-direction: column; gap: 14px"><span style="font-size: 12px; font-weight: 700; color: #0F766E; letter-spacing: 0.12em">FINOPS · [DATE]</span><span style="font-size: 20px; font-weight: 700; line-height: 1.35">Cost attribution that finance trusts: tagging and chargeback done right</span><span style="font-size: 14px; color: #64748B">[Author]</span></a>
-<a href="#insights" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 10px; padding: 32px; text-decoration: none; color: #0F172A; display: flex; flex-direction: column; gap: 14px"><span style="font-size: 12px; font-weight: 700; color: #0F766E; letter-spacing: 0.12em">AI · [DATE]</span><span style="font-size: 20px; font-weight: 700; line-height: 1.35">Governing AI agents: observability and guardrails for production use</span><span style="font-size: 14px; color: #64748B">[Author]</span></a>
 </div>
 </div>
 </section>
@@ -306,7 +290,7 @@ select option{color:#0F172A}
 <div style="display: flex; flex-direction: column; gap: 12px"><span style="font-size: 18px; font-weight: 700; letter-spacing: 0.06em; color: #FFFFFF">TEKMERA</span><span style="color: #94A3B8; line-height: 1.6">Data &amp; AI platforms for regulated industries.</span></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700; color: #FFFFFF">Services</span><a href="#services" style="color: #94A3B8; text-decoration: none">Platform Architecture</a><a href="#services" style="color: #94A3B8; text-decoration: none">Governance &amp; Security</a><a href="#services" style="color: #94A3B8; text-decoration: none">AI Enablement</a><a href="#services" style="color: #94A3B8; text-decoration: none">Accelerators</a></div>
 <div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700; color: #FFFFFF">Industries</span><a href="#industries" style="color: #94A3B8; text-decoration: none">Healthcare</a><a href="#industries" style="color: #94A3B8; text-decoration: none">Life Sciences</a><a href="#industries" style="color: #94A3B8; text-decoration: none">Public Health</a><a href="#industries" style="color: #94A3B8; text-decoration: none">Enterprise</a></div>
-<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700; color: #FFFFFF">Company</span><a href="#about" style="color: #94A3B8; text-decoration: none">About</a><a href="#insights" style="color: #94A3B8; text-decoration: none">Insights</a><a href="#contact" style="color: #94A3B8; text-decoration: none">Contact</a><a href="[LINKEDIN URL]" style="color: #94A3B8; text-decoration: none">LinkedIn</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="font-weight: 700; color: #FFFFFF">Company</span><a href="#about" style="color: #94A3B8; text-decoration: none">About</a><a href="#contact" style="color: #94A3B8; text-decoration: none">Contact</a></div>
 </div>
 <div style="border-top: 1px solid #1C2536; padding-top: 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 13px; color: #94A3B8">
 <span>© 2026 Tekmera. All rights reserved.</span>
