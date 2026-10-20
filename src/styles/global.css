@@ -11,8 +11,8 @@ html{scroll-behavior:smooth}
 
 body{margin:0;background:#0A0F1A}
 
-a{color:#5EEAD4}
-a:hover{color:#99F6E4}
+a{color:#8FB0FF}
+a:hover{color:#B9CDFF}
 
 input::placeholder,textarea::placeholder{color:#94A3B8}
 

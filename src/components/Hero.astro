@@ -18,18 +18,18 @@ const videoSrc = "/video/hero.mp4";
   <div aria-hidden="true" style="position: absolute; inset: 0; background: radial-gradient(60% 55% at 50% 48%, rgba(10,15,26,0.78) 0%, rgba(10,15,26,0.35) 60%, rgba(10,15,26,0) 100%), linear-gradient(180deg, rgba(10,15,26,0.0) 70%, rgba(11,19,34,1) 100%)"></div>
 
   <div style="position: relative; max-width: 960px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px; text-align: center">
-    <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; letter-spacing: 0.18em; color: #2DD4BF; font-weight: 700"><span style="width: 6px; height: 6px; border-radius: 50%; background: #2DD4BF"></span>YOUR DATA · REAL AI VALUE</div>
-    <h1 style="margin: 0; font-size: clamp(42px, 6.6vw, 88px); line-height: 1.03; font-weight: 700; color: #FFFFFF; letter-spacing: -0.03em">Real value from AI.<br><span style="color: #5EEAD4">Starting with your data.</span></h1>
-    <p style="margin: 0; font-size: 20px; line-height: 1.6; color: #D3DAE6; max-width: 740px">Most AI initiatives stall before they pay off — not because of the models, but because the data underneath isn't ready. Tekmera builds the governed foundation and the AI use cases on top of it, in your environment, so value shows up in production, not just in pilots.</p>
+    <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; letter-spacing: 0.18em; color: #5B8CFF; font-weight: 700"><span style="width: 6px; height: 6px; border-radius: 50%; background: #5B8CFF"></span>YOUR DATA · REAL AI VALUE</div>
+    <h1 style="margin: 0; font-size: clamp(42px, 6.6vw, 88px); line-height: 1.03; font-weight: 700; color: #F4EEE2; letter-spacing: -0.03em">Real value from AI.<br><span style="color: #8FB0FF">Starting with your data.</span></h1>
+    <p style="margin: 0; font-size: 20px; line-height: 1.6; color: #E4DCCD; max-width: 740px">Most AI initiatives stall before they pay off — not because of the models, but because the data underneath isn't ready. Tekmera builds the governed foundation and the AI use cases on top of it, in your environment, so value shows up in production, not just in pilots.</p>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px; padding-top: 6px">
-      <a href="/#contact" style="background: #2DD4BF; color: #04201C; text-decoration: none; font-weight: 700; padding: 18px 32px; border-radius: 999px; font-size: 14px; letter-spacing: 0.12em">TALK TO AN EXPERT</a>
-      <a href="/#services" style="color: #E6EAF2; text-decoration: underline; text-underline-offset: 5px; font-weight: 700; font-size: 15px">Explore our services</a>
+      <a href="/#contact" style="background: #5B8CFF; color: #0B1020; text-decoration: none; font-weight: 700; padding: 18px 32px; border-radius: 999px; font-size: 14px; letter-spacing: 0.12em">TALK TO AN EXPERT</a>
+      <a href="/#services" style="color: #F4EEE2; text-decoration: underline; text-underline-offset: 5px; font-weight: 700; font-size: 15px">Explore our services</a>
     </div>
   </div>
 
   <!-- scroll cue -->
   <a href="/#services" aria-label="Scroll to services" class="scroll-cue" style="position: absolute; left: 50%; bottom: 28px; transform: translateX(-50%); width: 28px; height: 44px; border: 2px solid rgba(255,255,255,0.35); border-radius: 14px; display: flex; justify-content: center; padding-top: 8px; box-sizing: border-box">
-    <span style="width: 4px; height: 8px; border-radius: 2px; background: #5EEAD4"></span>
+    <span style="width: 4px; height: 8px; border-radius: 2px; background: #8FB0FF"></span>
   </a>
 </section>
 
@@ -61,7 +61,7 @@ const videoSrc = "/video/hero.mp4";
     let w = 0, h = 0, dpr = 1, running = true;
     type P = { x: number; base: number; speed: number; amp: number; freq: number; phase: number; size: number; color: string };
     let parts: P[] = [];
-    const colors = ["94,234,212", "45,212,191", "96,165,250", "56,189,248"];
+    const colors = ["143,176,255", "91,140,255", "244,238,226", "120,150,230"];
 
     const spawn = (randomX: boolean): P => ({
       x: randomX ? Math.random() * w : -10,
